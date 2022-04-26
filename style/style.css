@@ -237,6 +237,51 @@ img {
 .filter__item, .nav__item_link {
     margin-right: 40px;
 }
+/* -----------------------------------------RECENT */
+.recent__container {
+    position: relative;
+}
+
+
+.recent__container-items {
+    position: relative;
+    width: 780px;
+}
+
+.recent__container-items::after {
+    content: "";
+    display: block;
+    width: 679px;
+    height: 1px;
+    position: absolute;
+    bottom: 30px;
+    margin: 0 auto;
+    background-color: #EBECED;
+}
+
+/* .recent__item::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 95%;
+    position: absolute;
+    bottom: 94%;
+    margin: 0 auto;
+    background-color: #EBECED;
+    translate: ;
+} */
+.recent__container::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 95%;
+    position: absolute;
+    left: 94%;
+    margin: 0 auto;
+    background-color: #EBECED;
+}
+
+
 
 .recent__main {
     display: flex;
@@ -484,7 +529,8 @@ img {
 }
 
 .paycard__title_button:hover {
-    background-color: #4CB649;  
+    background-color: #4CB649;
+    color: #fff;  
 }
 
 .paymethods__container {
@@ -553,8 +599,13 @@ img {
 
 .footer__container { 
     margin: 0 auto;
+    padding-bottom: 90px;
 }
-
+.footer__header {
+    margin-top: 72px;
+    margin-left: 200px;
+    margin-bottom: 73px;
+}
 .footer__blocks {
     display: flex;
 }
@@ -565,14 +616,14 @@ img {
 
 .left__item {
     display: flex;
-    justify-content: center;
-    justify-content: center;
+    margin-left: 200px;
 }
 
 .right__item {
     display: flex;
     flex-direction: column;
-    
+    width: 600px;
+    margin-right: 200px;
 }
 
 .footer__title-text {
@@ -592,4 +643,29 @@ img {
     font-weight: 100;
     color: #889099;
     margin: 15px 0;
+}
+
+.block__item-company {
+    margin-right: 46px;
+}
+.block__item-group {
+    margin-right: 88px;
+}
+
+.bloks__items-group {
+    margin-bottom: 40px;
+}
+
+.about__icons {
+    display: flex;
+    height: 30px;
+}
+
+.about__icons img {
+    height: 30px;
+    margin-right: 31px;
+}
+
+.right__items-google {
+    margin-bottom: 30px;
 }
